@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="operators-build"
+		revision="0.1.0-SNAPSHOT"
+		extra-scalaVersion="2.12"
+		extra-sbtVersion="1.0"
+		conf="runtime"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180107023447"/>
+	<dependencies>
+		<module organisation="org.xerial.sbt" name="sbt-jcheckstyle">
+			<revision name="0.2.1" status="release" pubdate="20171204111230" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xerial.org/" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3132" time="0" location="/home/knoldus/.ivy2/cache/scala_2.12/sbt_1.0/org.xerial.sbt/sbt-jcheckstyle/ivy-0.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/sbt/sbt-jcheckstyle_2.12_1.0/0.2.1/sbt-jcheckstyle-0.2.1.pom"/>
+				<caller organisation="default" name="operators-build" conf="compile, runtime" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-jcheckstyle" type="jar" ext="jar" status="no" details="" size="22599" time="0" location="/home/knoldus/.ivy2/cache/scala_2.12/sbt_1.0/org.xerial.sbt/sbt-jcheckstyle/jars/sbt-jcheckstyle-0.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/sbt/sbt-jcheckstyle_2.12_1.0/0.2.1/sbt-jcheckstyle-0.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.puppycrawl.tools" name="checkstyle">
+			<revision name="8.5" status="release" pubdate="20171126200655" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://checkstyle.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="LGPL-2.1+" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt"/>
+				<metadata-artifact status="no" details="" size="8448" time="0" location="/home/knoldus/.ivy2/cache/com.puppycrawl.tools/checkstyle/ivy-8.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/puppycrawl/tools/checkstyle/8.5/checkstyle-8.5.pom"/>
+				<caller organisation="org.xerial.sbt" name="sbt-jcheckstyle" conf="default, compile, runtime, master" rev="8.5" rev-constraint-default="8.5" rev-constraint-dynamic="8.5" callerrev="0.2.1"/>
+				<artifacts>
+					<artifact name="checkstyle" type="jar" ext="jar" status="no" details="" size="1243409" time="0" location="/home/knoldus/.ivy2/cache/com.puppycrawl.tools/checkstyle/jars/checkstyle-8.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/puppycrawl/tools/checkstyle/8.5/checkstyle-8.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.saxon" name="Saxon-HE">
+			<revision name="9.8.0-5" status="release" pubdate="20171005212225" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.saxonica.com/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Mozilla Public License Version 2.0" url="http://www.mozilla.org/MPL/2.0/"/>
+				<metadata-artifact status="no" details="" size="3611" time="0" location="/home/knoldus/.ivy2/cache/net.sf.saxon/Saxon-HE/ivy-9.8.0-5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/9.8.0-5/Saxon-HE-9.8.0-5.pom"/>
+				<caller organisation="com.puppycrawl.tools" name="checkstyle" conf="compile, runtime" rev="9.8.0-5" rev-constraint-default="9.8.0-5" rev-constraint-dynamic="9.8.0-5" callerrev="8.5"/>
+				<artifacts>
+					<artifact name="Saxon-HE" type="jar" ext="jar" status="no" details="" size="5006294" time="0" location="/home/knoldus/.ivy2/cache/net.sf.saxon/Saxon-HE/jars/Saxon-HE-9.8.0-5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/9.8.0-5/Saxon-HE-9.8.0-5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="23.2-jre" status="release" pubdate="20171012042446" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7198" time="0" location="/home/knoldus/.ivy2/cache/com.google.guava/guava/ivy-23.2-jre.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/23.2-jre/guava-23.2-jre.pom"/>
+				<caller organisation="com.puppycrawl.tools" name="checkstyle" conf="compile, runtime" rev="23.2-jre" rev-constraint-default="23.2-jre" rev-constraint-dynamic="23.2-jre" callerrev="8.5"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2649860" time="0" location="/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-23.2-jre.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/23.2-jre/guava-23.2-jre.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.mojo" name="animal-sniffer-annotations">
+			<revision name="1.14" status="release" pubdate="20150225222330" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4565" time="0" location="/home/knoldus/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/ivy-1.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="1.14" rev-constraint-default="1.14" rev-constraint-dynamic="1.14" callerrev="23.2-jre"/>
+				<artifacts>
+					<artifact name="animal-sniffer-annotations" type="jar" ext="jar" status="no" details="" size="3482" time="0" location="/home/knoldus/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/jars/animal-sniffer-annotations-1.14.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.j2objc" name="j2objc-annotations">
+			<revision name="1.1" status="release" pubdate="20170119043659" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/google/j2objc/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3174" time="0" location="/home/knoldus/.ivy2/cache/com.google.j2objc/j2objc-annotations/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="23.2-jre"/>
+				<artifacts>
+					<artifact name="j2objc-annotations" type="jar" ext="jar" status="no" details="" size="8782" time="0" location="/home/knoldus/.ivy2/cache/com.google.j2objc/j2objc-annotations/jars/j2objc-annotations-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.errorprone" name="error_prone_annotations">
+			<revision name="2.0.18" status="release" pubdate="20170301090423" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4020" time="0" location="/home/knoldus/.ivy2/cache/com.google.errorprone/error_prone_annotations/ivy-2.0.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="2.0.18" rev-constraint-default="2.0.18" rev-constraint-dynamic="2.0.18" callerrev="23.2-jre"/>
+				<artifacts>
+					<artifact name="error_prone_annotations" type="jar" ext="jar" status="no" details="" size="12078" time="0" location="/home/knoldus/.ivy2/cache/com.google.errorprone/error_prone_annotations/jars/error_prone_annotations-2.0.18.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.findbugs" name="jsr305">
+			<revision name="1.3.9" status="release" pubdate="20090825035822" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2519" time="0" location="/home/knoldus/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-1.3.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="1.3.9" rev-constraint-default="1.3.9" rev-constraint-dynamic="1.3.9" callerrev="23.2-jre"/>
+				<artifacts>
+					<artifact name="jsr305" type="jar" ext="jar" status="no" details="" size="33015" time="0" location="/home/knoldus/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-1.3.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-cli" name="commons-cli">
+			<revision name="1.4" status="release" pubdate="20170309183200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-cli/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11817" time="0" location="/home/knoldus/.ivy2/cache/commons-cli/commons-cli/ivy-1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.pom"/>
+				<caller organisation="com.puppycrawl.tools" name="checkstyle" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="8.5"/>
+				<artifacts>
+					<artifact name="commons-cli" type="jar" ext="jar" status="no" details="" size="53820" time="0" location="/home/knoldus/.ivy2/cache/commons-cli/commons-cli/jars/commons-cli-1.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-beanutils" name="commons-beanutils">
+			<revision name="1.9.3" status="release" pubdate="20160921215132" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://commons.apache.org/proper/commons-beanutils/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12135" time="0" location="/home/knoldus/.ivy2/cache/commons-beanutils/commons-beanutils/ivy-1.9.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom"/>
+				<caller organisation="com.puppycrawl.tools" name="checkstyle" conf="compile, runtime" rev="1.9.3" rev-constraint-default="1.9.3" rev-constraint-dynamic="1.9.3" callerrev="8.5"/>
+				<artifacts>
+					<artifact name="commons-beanutils" type="jar" ext="jar" status="no" details="" size="246174" time="0" location="/home/knoldus/.ivy2/cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.9.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-collections" name="commons-collections">
+			<revision name="3.2.2" status="release" pubdate="20151113044126" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/collections/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11113" time="0" location="/home/knoldus/.ivy2/cache/commons-collections/commons-collections/ivy-3.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.pom"/>
+				<caller organisation="commons-beanutils" name="commons-beanutils" conf="compile, runtime" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="1.9.3"/>
+				<artifacts>
+					<artifact name="commons-collections" type="jar" ext="jar" status="no" details="" size="588337" time="0" location="/home/knoldus/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.2" status="release" pubdate="20140705234228" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11623" time="0" location="/home/knoldus/.ivy2/cache/commons-logging/commons-logging/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom"/>
+				<caller organisation="commons-beanutils" name="commons-beanutils" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="1.9.3"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="61829" time="0" location="/home/knoldus/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.antlr" name="antlr4-runtime">
+			<revision name="4.7" status="release" pubdate="20170331025734" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="The BSD License" url="http://www.antlr.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3593" time="0" location="/home/knoldus/.ivy2/cache/org.antlr/antlr4-runtime/ivy-4.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.pom"/>
+				<caller organisation="com.puppycrawl.tools" name="checkstyle" conf="compile, runtime" rev="4.7" rev-constraint-default="4.7" rev-constraint-dynamic="4.7" callerrev="8.5"/>
+				<artifacts>
+					<artifact name="antlr4-runtime" type="jar" ext="jar" status="no" details="" size="334662" time="0" location="/home/knoldus/.ivy2/cache/org.antlr/antlr4-runtime/jars/antlr4-runtime-4.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="antlr" name="antlr">
+			<revision name="2.7.7" status="release" pubdate="20070113115839" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="BSD License" url="http://www.antlr.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2565" time="0" location="/home/knoldus/.ivy2/cache/antlr/antlr/ivy-2.7.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom"/>
+				<caller organisation="com.puppycrawl.tools" name="checkstyle" conf="compile, runtime" rev="2.7.7" rev-constraint-default="2.7.7" rev-constraint-dynamic="2.7.7" callerrev="8.5"/>
+				<artifacts>
+					<artifact name="antlr" type="jar" ext="jar" status="no" details="" size="445288" time="0" location="/home/knoldus/.ivy2/cache/antlr/antlr/jars/antlr-2.7.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="global-plugins">
+			<revision name="0.0" status="integration" pubdate="20180107023438" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="default" name="operators-build" conf="compile, runtime" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

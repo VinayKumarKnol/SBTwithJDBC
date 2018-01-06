@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="operators$sources"
+		revision="0.1"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180107023652"/>
+	<dependencies>
+		<module organisation="mysql" name="mysql-connector-java">
+			<revision name="8.0.8-dmr" status="release" pubdate="20170926200844" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2541" time="0" location="/home/knoldus/.ivy2/cache/mysql/mysql-connector-java/ivy-8.0.8-dmr.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.8-dmr/mysql-connector-java-8.0.8-dmr.pom"/>
+				<caller organisation="default" name="operators$sources" conf="compile, runtime-internal, runtime, optional" rev="8.0.8-dmr" rev-constraint-default="8.0.8-dmr" rev-constraint-dynamic="8.0.8-dmr" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="mysql-connector-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1290499" time="0" location="/home/knoldus/.ivy2/cache/mysql/mysql-connector-java/srcs/mysql-connector-java-8.0.8-dmr-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.8-dmr/mysql-connector-java-8.0.8-dmr-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.4" status="release" pubdate="20171011123456" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2471" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4.pom"/>
+				<caller organisation="default" name="operators$sources" conf="compile, runtime-internal, runtime, optional" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.1" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="991177" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
